@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'translateApp.apps.TranslateappConfig',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [

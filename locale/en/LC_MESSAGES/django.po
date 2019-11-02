@@ -20,8 +20,8 @@ msgstr ""
 
 #: .\internationalizationProject\settings.py:78
 msgid "English"
-msgstr ""
+msgstr "Angielski"
 
 #: .\internationalizationProject\settings.py:79
 msgid "Polish"
-msgstr ""
+msgstr "Polski"

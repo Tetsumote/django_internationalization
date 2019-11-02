@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+{% load humanize %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+<h1 class="display-4 mt-5 mb-5">Post Detail:</h1>
+
+        <img src="https://via.placeholder.com/650x300" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"> {{ post.title }}<br><small class="text-muted">by {{ post.author }}</small></h5>
+
+            <p class="card-text">{{ post.body|linebreaks }}</p>
+            <p class="card-text mt-2">Published {{ post.publish|naturaltime }}</p>
+            
+        </div>
+
+    
+
+{% endblock %}
