@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'translateApp.apps.TranslateappConfig',
     'django.contrib.humanize',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ROSETTA_SHOW_AT_ADMIN_PANEL = True
