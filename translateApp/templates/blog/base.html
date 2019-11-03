@@ -19,7 +19,28 @@
                     <li class="nav-item active">
                       <a class="nav-link" href="#">{% trans "Home" %}<span class="sr-only">(current)</span></a>
                     </li>
-                 
+
+                      
+                      </ul>
+                      <ul class="navbar-nav ml-auto">
+  
+                        <li class="nav-item">
+                          {% get_current_language as LANGUAGE_CODE %}
+                          {% get_available_languages as LANGUAGES %}
+                          {% get_language_info_list for LANGUAGES as languages %}
+                          <div class="languages">
+                          <ul class="navbar-nav mr-auto">
+                          {% for language in languages %}
+                          <li class="nav-item">
+                          <a class="nav-link" href="/{{ language.code }}/blog/"
+                          {% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>
+                          {{ language.name_local }}
+                          </a>
+                          </li>
+                          {% endfor %}
+                          </ul>
+                      </div>
+                    </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder={% trans "Search" %} aria-label="Search">

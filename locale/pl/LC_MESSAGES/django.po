@@ -8,22 +8,37 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-02 22:38+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2019-11-03 02:58+0100\n"
+"PO-Revision-Date: 2019-11-03 02:59+0000\n"
+"Last-Translator: b'  <unionproject88@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
-"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
-"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
 
-#: .\internationalizationProject\settings.py:79
+#: .\internationalizationProject\settings.py:80
 msgid "English"
 msgstr "Angielski"
 
-#: .\internationalizationProject\settings.py:80
+#: .\internationalizationProject\settings.py:81
 msgid "Polish"
 msgstr "Polski"
+
+#: .\internationalizationProject\urls.py:24
+msgid "admin/"
+msgstr "administrator"
+
+#: .\internationalizationProject\urls.py:25
+msgid "accounts/"
+msgstr "konto"
+
+#: .\internationalizationProject\urls.py:26
+msgid "rosetta/"
+msgstr "rosetta"
+
+#: .\internationalizationProject\urls.py:27
+msgid "blog/"
+msgstr "blog"

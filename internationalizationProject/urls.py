@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('rosetta/', include('rosetta.urls')),
-    path('blog/', include('translateApp.urls', namespace='blog')),
-]
+from django.conf.urls.i18n import i18n_patterns
+from django.utils.translation import gettext_lazy as _
+
+
+urlpatterns =  i18n_patterns(
+    path(_('admin/'), admin.site.urls),
+    path(_('accounts/'), include('django.contrib.auth.urls')),
+    path(_('rosetta/'), include('rosetta.urls')),
+    path(_('blog/'), include('translateApp.urls', namespace='blog')),
+)
