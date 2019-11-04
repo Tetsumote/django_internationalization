@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'translateApp.apps.TranslateappConfig',
     'django.contrib.humanize',
     'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,17 @@ LANGUAGES = (
     ('en', _('English')),
     ('pl', _('Polish')),
 )
+
+PARLER_LANGUAGES = {
+    None:(
+        {'code':'en'},
+        {'code': 'pl'},
+    ),
+    'default': {
+        'fallback':'en',
+        'hide_untranslated': False,
+    }
+}
 
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
